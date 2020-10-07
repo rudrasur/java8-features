@@ -20,6 +20,13 @@ interface Printable2 {
 	void print(String msg, Integer msg2);
 }
 
+@FunctionalInterface
 interface Returnable2 {
 	String returnValue();
+}
+
+interface MydefaultInterface {
+	default void print() {
+		System.out.println("You still need to implement me to get desired output.");
+	}
 }
